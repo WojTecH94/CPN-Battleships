@@ -1,0 +1,8 @@
+Pola s¹ ¿etonami sk³adaj¹cymi przechowuj¹cymi kolor (statek/wolne) i wspó³rzêdne.
+Rozk³ad statków: przechodzimy przez tokeny po kolei i randem ustawiamy je na statek albo wolne, jeœli po przejœciu nie bêdzie wystarczaj¹cej liczby, to od nowa. Czekamy, a¿ wszystkie statki zostan¹ rozlokowane.
+U¿ytkownik œci¹ga token (generuj¹c numer 0-100) i sprawdza czy jest najedzony, jeœli token by³ wczeœniej œci¹gniêty, to losuje ponownie.
+Wygrywa ten, kto pierwszy siê naje œci¹gnie okreœlon¹ liczbê tokenów oznaczonych jako statek.
+
+Rand polega na: discrete(0,99) je¿eli zwraca < 19 to statek, jeœli wiêcej - wolne pole.
+
+Druga koncepcja (lista na której losujemy indeks 1z2)
