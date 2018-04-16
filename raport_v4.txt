@@ -1,0 +1,193 @@
+CPN Tools state space report for:
+/cygdrive/E/Dysk Google/Szkola/Metody Formalne/Battleship_v4.cpn
+Report generated: Mon Apr 16 22:41:52 2018
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  36472
+     Arcs:   68921
+     Secs:   300
+     Status: Partial
+
+  Scc Graph
+     Nodes:  36472
+     Arcs:   68921
+     Secs:   1
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     Battleships'Places 1    1          1
+     Battleships'Places2 1   1          1
+     Battleships'Player's_turn 1
+                             0          0
+     Battleships'Player_1_Coordinates_Left 1
+                             12         0
+     Battleships'Player_2_Coordinates_Left 1
+                             11         0
+     Battleships'Ships 1     16         4
+     Battleships'Ships2 1    16         5
+     Shot'Game_Over 1        0          0
+     Shot'Last_Shot 1        0          0
+     Shot'Point 1            1          1
+     Shot'finished 1         0          0
+     Shot2'Game_Over 1       0          0
+     Shot2'Last_Shot2 1      0          0
+     Shot2'Point 1           1          1
+     Shot2'finished 1        0          0
+
+  Best Upper Multi-set Bounds
+     Battleships'Places 1
+                         1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9++
+1`10++
+1`11++
+1`12++
+1`13
+     Battleships'Places2 1
+                         1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9++
+1`10++
+1`11++
+1`12
+     Battleships'Player's_turn 1
+                         empty
+     Battleships'Player_1_Coordinates_Left 1
+                         1`(1,F)++
+1`(1,M)++
+1`(2,F)++
+1`(2,M)++
+1`(3,F)++
+1`(3,M)++
+1`(4,F)++
+1`(4,M)++
+1`(5,F)++
+1`(5,M)++
+1`(6,F)++
+1`(6,M)++
+1`(7,F)++
+1`(7,M)++
+1`(8,F)++
+1`(8,M)++
+1`(9,F)++
+1`(9,M)++
+1`(10,F)++
+1`(10,M)++
+1`(11,F)++
+1`(11,M)++
+1`(12,F)++
+1`(12,M)
+     Battleships'Player_2_Coordinates_Left 1
+                         1`(1,F)++
+1`(1,M)++
+1`(2,F)++
+1`(2,M)++
+1`(3,F)++
+1`(3,M)++
+1`(4,F)++
+1`(4,M)++
+1`(5,F)++
+1`(5,M)++
+1`(6,F)++
+1`(6,M)++
+1`(7,F)++
+1`(7,M)++
+1`(8,F)++
+1`(8,M)++
+1`(9,F)++
+1`(9,M)++
+1`(10,F)++
+1`(10,M)++
+1`(11,F)++
+1`(11,M)
+     Battleships'Ships 1 12`F++
+4`M
+     Battleships'Ships2 1
+                         12`F++
+4`M
+     Shot'Game_Over 1    empty
+     Shot'Last_Shot 1    empty
+     Shot'Point 1        1`0
+     Shot'finished 1     empty
+     Shot2'Game_Over 1   empty
+     Shot2'Last_Shot2 1  empty
+     Shot2'Point 1       1`0
+     Shot2'finished 1    empty
+
+  Best Lower Multi-set Bounds
+     Battleships'Places 1
+                         empty
+     Battleships'Places2 1
+                         empty
+     Battleships'Player's_turn 1
+                         empty
+     Battleships'Player_1_Coordinates_Left 1
+                         empty
+     Battleships'Player_2_Coordinates_Left 1
+                         empty
+     Battleships'Ships 1 1`F
+     Battleships'Ships2 1
+                         1`F
+     Shot'Game_Over 1    empty
+     Shot'Last_Shot 1    empty
+     Shot'Point 1        1`0
+     Shot'finished 1     empty
+     Shot2'Game_Over 1   empty
+     Shot2'Last_Shot2 1  empty
+     Shot2'Point 1       1`0
+     Shot2'finished 1    empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     17572 [36472,36471,36470,36469,36468,...]
+
+  Dead Transition Instances
+     Battleships'Ready 1
+     Shot'Continue 1
+     Shot'Finish_game 1
+     Shot'Hit 1
+     Shot'Miss 1
+     Shot'Shot 1
+     Shot2'Continue 1
+     Shot2'Finish_game 1
+     Shot2'Hit 1
+     Shot2'Miss 1
+     Shot2'Shot2 1
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.
