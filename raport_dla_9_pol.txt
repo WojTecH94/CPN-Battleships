@@ -1,21 +1,21 @@
 CPN Tools state space report for:
 /cygdrive/E/Dysk Google/Szkola/Metody Formalne/Battleship_v4.cpn
-Report generated: Tue Apr 17 09:59:21 2018
+Report generated: Tue Apr 17 10:09:23 2018
 
 
  Statistics
 ------------------------------------------------------------------------
 
   State Space
-     Nodes:  36518
-     Arcs:   69027
+     Nodes:  37418
+     Arcs:   74022
      Secs:   300
      Status: Partial
 
   Scc Graph
-     Nodes:  36518
-     Arcs:   69027
-     Secs:   1
+     Nodes:  37418
+     Arcs:   74022
+     Secs:   2
 
 
  Boundedness Properties
@@ -28,11 +28,11 @@ Report generated: Tue Apr 17 09:59:21 2018
      Battleships'Player's_turn 1
                              0          0
      Battleships'Player_1_Coordinates_Left 1
-                             12         0
+                             9          0
      Battleships'Player_2_Coordinates_Left 1
-                             11         0
-     Battleships'Ships 1     16         4
-     Battleships'Ships2 1    16         5
+                             9          0
+     Battleships'Ships 1     9          0
+     Battleships'Ships2 1    9          0
      Shot'Game_Over 1        0          0
      Shot'Last_Shot 1        0          0
      Shot'Point 1            1          1
@@ -53,10 +53,7 @@ Report generated: Tue Apr 17 09:59:21 2018
 1`7++
 1`8++
 1`9++
-1`10++
-1`11++
-1`12++
-1`13
+1`10
      Battleships'Places2 1
                          1`1++
 1`2++
@@ -67,9 +64,7 @@ Report generated: Tue Apr 17 09:59:21 2018
 1`7++
 1`8++
 1`9++
-1`10++
-1`11++
-1`12
+1`10
      Battleships'Player's_turn 1
                          empty
      Battleships'Player_1_Coordinates_Left 1
@@ -90,13 +85,7 @@ Report generated: Tue Apr 17 09:59:21 2018
 1`(8,F)++
 1`(8,M)++
 1`(9,F)++
-1`(9,M)++
-1`(10,F)++
-1`(10,M)++
-1`(11,F)++
-1`(11,M)++
-1`(12,F)++
-1`(12,M)
+1`(9,M)
      Battleships'Player_2_Coordinates_Left 1
                          1`(1,F)++
 1`(1,M)++
@@ -115,16 +104,12 @@ Report generated: Tue Apr 17 09:59:21 2018
 1`(8,F)++
 1`(8,M)++
 1`(9,F)++
-1`(9,M)++
-1`(10,F)++
-1`(10,M)++
-1`(11,F)++
-1`(11,M)
-     Battleships'Ships 1 12`F++
-4`M
+1`(9,M)
+     Battleships'Ships 1 6`F++
+3`M
      Battleships'Ships2 1
-                         12`F++
-4`M
+                         6`F++
+3`M
      Shot'Game_Over 1    empty
      Shot'Last_Shot 1    empty
      Shot'Point 1        1`0
@@ -145,9 +130,9 @@ Report generated: Tue Apr 17 09:59:21 2018
                          empty
      Battleships'Player_2_Coordinates_Left 1
                          empty
-     Battleships'Ships 1 1`F
+     Battleships'Ships 1 empty
      Battleships'Ships2 1
-                         1`F
+                         empty
      Shot'Game_Over 1    empty
      Shot'Last_Shot 1    empty
      Shot'Point 1        1`0
@@ -169,7 +154,7 @@ Report generated: Tue Apr 17 09:59:21 2018
 ------------------------------------------------------------------------
 
   Dead Markings
-     17588 [36518,36517,36516,36515,36514,...]
+     12510 [37418,37417,37416,37415,37414,...]
 
   Dead Transition Instances
      Battleships'Ready 1
