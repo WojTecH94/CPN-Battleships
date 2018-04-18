@@ -1,21 +1,21 @@
 CPN Tools state space report for:
 /cygdrive/E/Dysk Google/Szkola/Metody Formalne/Battleship_v4.cpn
-Report generated: Tue Apr 17 21:42:27 2018
+Report generated: Wed Apr 18 20:21:12 2018
 
 
  Statistics
 ------------------------------------------------------------------------
 
   State Space
-     Nodes:  40306
-     Arcs:   79870
-     Secs:   300
+     Nodes:  68554
+     Arcs:   136282
+     Secs:   1200
      Status: Partial
 
   Scc Graph
-     Nodes:  40306
-     Arcs:   79870
-     Secs:   2
+     Nodes:  68554
+     Arcs:   136282
+     Secs:   3
 
 
  Boundedness Properties
@@ -153,7 +153,7 @@ Report generated: Tue Apr 17 21:42:27 2018
 ------------------------------------------------------------------------
 
   Dead Markings
-     13062 [40306,40305,40304,40303,40302,...]
+     17802 [68554,68553,68552,68551,68550,...]
 
   Dead Transition Instances
      Battleships'Ready 1

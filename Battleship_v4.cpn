@@ -68,8 +68,7 @@
           <id>coor</id>
           <id>n</id>
           <id>k</id>
-          <id>i</id>
-          <layout>var coor,n,k,i : INT;</layout>
+          <layout>var coor,n,k : INT;</layout>
         </var>
         <var id="ID1412908721">
           <type>
@@ -194,8 +193,8 @@ Coordinates Left</text>
                 version="4.0.1">STATE</text>
         </type>
         <initmark id="ID1412906410">
-          <posattr x="-270.000000"
-                   y="404.000000"/>
+          <posattr x="-370.000000"
+                   y="423.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -274,7 +273,7 @@ Coordinates Left</text>
         <text>Player 2
 Coordinates Left</text>
         <ellipse w="118.000000"
-                 h="84.000000"/>
+                 h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
         <marking x="0.000000"
@@ -286,7 +285,7 @@ Coordinates Left</text>
         </marking>
         <type id="ID1413003048">
           <posattr x="-22.500000"
-                   y="-165.000000"/>
+                   y="-161.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -300,7 +299,7 @@ Coordinates Left</text>
         </type>
         <initmark id="ID1413003049">
           <posattr x="-7.000000"
-                   y="-86.000000"/>
+                   y="-90.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -351,8 +350,8 @@ Coordinates Left</text>
                 version="4.0.1">STATE</text>
         </type>
         <initmark id="ID1413003052">
-          <posattr x="-297.000000"
-                   y="-270.000000"/>
+          <posattr x="-398.000000"
+                   y="-254.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -469,6 +468,58 @@ Coordinates Left</text>
                 version="4.0.1">1`1</text>
         </initmark>
       </place>
+      <place id="ID1413401884">
+        <posattr x="-107.000000"
+                 y="42.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Game Over</text>
+        <ellipse w="90.000000"
+                 h="40.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1413401885">
+          <posattr x="-40.500000"
+                   y="42.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">BOOL</text>
+        </type>
+        <initmark id="ID1413401886">
+          <posattr x="-40.000000"
+                   y="65.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </initmark>
+      </place>
       <trans id="ID1412890072"
              explicit="false">
         <posattr x="-84.000000"
@@ -487,7 +538,7 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413144678">
-          <posattr x="-180.000000"
+          <posattr x="-84.000000"
                    y="421.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -498,7 +549,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[n&lt;=coors]</text>
+                version="4.0.1">[coor&lt;=coors]</text>
         </cond>
         <time id="ID1412890074">
           <posattr x="-12.500000"
@@ -561,8 +612,8 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413003042">
-          <posattr x="-150.000000"
-                   y="-261.000000"/>
+          <posattr x="-84.000000"
+                   y="-327.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -572,7 +623,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">[coor&lt;=coors]</text>
         </cond>
         <time id="ID1413003043">
           <posattr x="-12.500000"
@@ -633,7 +684,7 @@ Coordinates Left</text>
         <box w="96.000000"
              h="40.000000"/>
         <subst subpage="ID1413295699"
-               portsock="(ID1413296935,ID1412890093)(ID1413296939,ID1412946774)">
+               portsock="(ID1413296935,ID1412890093)(ID1413296939,ID1412946774)(ID1413296952,ID1413401884)">
           <subpageinfo id="ID1413295736"
                        name="Shot">
             <posattr x="164.000000"
@@ -651,7 +702,7 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413295688">
-          <posattr x="377.500000"
+          <posattr x="319.500000"
                    y="190.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -662,7 +713,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[k&lt;&gt;ships andalso permission=true]</text>
+                version="4.0.1">[permission=true]</text>
         </cond>
         <time id="ID1413295689">
           <posattr x="261.500000"
@@ -723,7 +774,7 @@ Coordinates Left</text>
         <box w="96.000000"
              h="40.000000"/>
         <subst subpage="ID1413305487"
-               portsock="(ID1413305512,ID1413003047)(ID1413311975,ID1412946774)">
+               portsock="(ID1413305512,ID1413003047)(ID1413311975,ID1412946774)(ID1413311988,ID1413401884)">
           <subpageinfo id="ID1413305534"
                        name="Shot2">
             <posattr x="169.000000"
@@ -741,7 +792,7 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413305474">
-          <posattr x="383.500000"
+          <posattr x="325.500000"
                    y="-124.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -752,7 +803,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[k&lt;&gt;ships andalso permission=false]</text>
+                version="4.0.1">[permission=false]</text>
         </cond>
         <time id="ID1413305475">
           <posattr x="262.500000"
@@ -815,7 +866,7 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413359682">
-          <posattr x="519.500000"
+          <posattr x="514.500000"
                    y="73.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -826,7 +877,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[i=k andalso i&gt;coors]</text>
+                version="4.0.1">[n=k andalso n&gt;coors]</text>
         </cond>
         <time id="ID1413359683">
           <posattr x="664.500000"
@@ -889,7 +940,7 @@ Coordinates Left</text>
         <transend idref="ID1412890072"/>
         <placeend idref="ID1412890093"/>
         <annot id="ID1412890124">
-          <posattr x="-63.000000"
+          <posattr x="-53.500000"
                    y="286.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -900,7 +951,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(n,st)</text>
+                version="4.0.1">(coor,st)</text>
         </annot>
       </arc>
       <arc id="ID1412906968"
@@ -953,8 +1004,8 @@ Coordinates Left</text>
         <transend idref="ID1413003041"/>
         <placeend idref="ID1413003047"/>
         <annot id="ID1413003057">
-          <posattr x="-106.000000"
-                   y="-221.000000"/>
+          <posattr x="-115.500000"
+                   y="-219.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -964,7 +1015,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(n,st)</text>
+                version="4.0.1">(coor,st)</text>
         </annot>
       </arc>
       <arc id="ID1413003058"
@@ -1028,7 +1079,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">n</text>
+                version="4.0.1">coor</text>
         </annot>
       </arc>
       <arc id="ID1413147116"
@@ -1073,7 +1124,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">n</text>
+                version="4.0.1">coor</text>
         </annot>
       </arc>
       <arc id="ID1413149325"
@@ -1105,7 +1156,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">n+1</text>
+                version="4.0.1">coor+1</text>
         </annot>
       </arc>
       <arc id="ID1413167294"
@@ -1137,7 +1188,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">n+1</text>
+                version="4.0.1">coor+1</text>
         </annot>
       </arc>
       <arc id="ID1413295693"
@@ -1191,7 +1242,7 @@ Coordinates Left</text>
         <placeend idref="ID1412890093"/>
         <annot id="ID1413295698">
           <posattr x="63.000000"
-                   y="180.000000"/>
+                   y="205.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1201,7 +1252,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">(coor,st)</text>
         </annot>
       </arc>
       <arc id="ID1413305481"
@@ -1255,7 +1306,7 @@ Coordinates Left</text>
         <placeend idref="ID1413003047"/>
         <annot id="ID1413305486">
           <posattr x="64.000000"
-                   y="-140.000000"/>
+                   y="-115.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1265,7 +1316,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">(coor,st)</text>
         </annot>
       </arc>
       <arc id="ID1413360298"
@@ -1299,8 +1350,8 @@ Coordinates Left</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1413360299">
-          <posattr x="625.500000"
-                   y="227.000000"/>
+          <posattr x="612.000000"
+                   y="221.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1310,7 +1361,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">i</text>
+                version="4.0.1">n</text>
         </annot>
       </arc>
       <arc id="ID1413361527"
@@ -1378,6 +1429,70 @@ Coordinates Left</text>
         <annot id="ID1413364653">
           <posattr x="422.000000"
                    y="53.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">true</text>
+        </annot>
+      </arc>
+      <arc id="ID1413401958"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1413295687"/>
+        <placeend idref="ID1413401884"/>
+        <annot id="ID1413401959">
+          <posattr x="35.000000"
+                   y="130.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">true</text>
+        </annot>
+      </arc>
+      <arc id="ID1413402033"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1413305473"/>
+        <placeend idref="ID1413401884"/>
+        <annot id="ID1413402034">
+          <posattr x="50.000000"
+                   y="-29.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1549,7 +1664,7 @@ Coordinates Left</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1413296944">
-          <posattr x="5.500000"
+          <posattr x="8.000000"
                    y="-134.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1560,7 +1675,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">Place</text>
+                version="4.0.1">STATE</text>
         </type>
         <initmark id="ID1413296945">
           <posattr x="21.000000"
@@ -1705,7 +1820,7 @@ Coordinates Left</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1413296953">
-          <posattr x="664.500000"
+          <posattr x="671.500000"
                    y="18.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1716,7 +1831,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">INT</text>
+                version="4.0.1">BOOL</text>
         </type>
         <initmark id="ID1413296954">
           <posattr x="686.000000"
@@ -1732,6 +1847,19 @@ Coordinates Left</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
+        <port id="ID1413402918"
+              type="Out">
+          <posattr x="571.000000"
+                   y="25.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </port>
       </place>
       <trans id="ID1413296901"
              explicit="false">
@@ -1751,8 +1879,8 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413296902">
-          <posattr x="-418.091716"
-                   y="75.721893"/>
+          <posattr x="-358.000000"
+                   y="71.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1825,8 +1953,8 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413296908">
-          <posattr x="51.396450"
-                   y="-79.158284"/>
+          <posattr x="108.896450"
+                   y="-141.158284"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1899,7 +2027,7 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413296914">
-          <posattr x="200.500000"
+          <posattr x="276.000000"
                    y="73.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2196,7 +2324,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(coor,st)</text>
+                version="4.0.1">st</text>
         </annot>
       </arc>
       <arc id="ID1413296969"
@@ -2345,7 +2473,7 @@ Coordinates Left</text>
         <transend idref="ID1413296913"/>
         <placeend idref="ID1413296952"/>
         <annot id="ID1413296978">
-          <posattr x="433.500000"
+          <posattr x="424.000000"
                    y="53.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2356,7 +2484,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">k</text>
+                version="4.0.1">true</text>
         </annot>
       </arc>
       <arc id="ID1413296979"
@@ -2409,7 +2537,7 @@ Coordinates Left</text>
         <transend idref="ID1413296925"/>
         <placeend idref="ID1413296943"/>
         <annot id="ID1413296982">
-          <posattr x="-18.500000"
+          <posattr x="-39.000000"
                    y="-179.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2420,7 +2548,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(coor,st)</text>
+                version="4.0.1">st</text>
         </annot>
       </arc>
       <arc id="ID1413296983"
@@ -2441,7 +2569,7 @@ Coordinates Left</text>
         <transend idref="ID1413296901"/>
         <placeend idref="ID1413296943"/>
         <annot id="ID1413296984">
-          <posattr x="-191.500000"
+          <posattr x="-212.000000"
                    y="-28.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2452,7 +2580,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(coor,st)</text>
+                version="4.0.1">st</text>
         </annot>
       </arc>
       <arc id="ID1413296985"
@@ -2690,7 +2818,7 @@ Coordinates Left</text>
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Player&apos;s turn</text>
+        <text>Player&apos;s turn2</text>
         <ellipse w="108.000000"
                  h="40.000000"/>
         <token x="-10.000000"
@@ -2768,7 +2896,7 @@ Coordinates Left</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1413311980">
-          <posattr x="586.500000"
+          <posattr x="589.000000"
                    y="-379.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2779,7 +2907,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">Place</text>
+                version="4.0.1">STATE</text>
         </type>
         <initmark id="ID1413311981">
           <posattr x="602.000000"
@@ -2924,7 +3052,7 @@ Coordinates Left</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1413311989">
-          <posattr x="1241.500000"
+          <posattr x="1248.500000"
                    y="-227.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2935,7 +3063,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">INT</text>
+                version="4.0.1">BOOL</text>
         </type>
         <initmark id="ID1413311990">
           <posattr x="1263.000000"
@@ -2951,6 +3079,19 @@ Coordinates Left</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
+        <port id="ID1413403591"
+              type="Out">
+          <posattr x="1148.000000"
+                   y="-220.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </port>
       </place>
       <trans id="ID1413311945"
              explicit="false">
@@ -3044,8 +3185,8 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413311952">
-          <posattr x="479.584852"
-                   y="-456.327101"/>
+          <posattr x="532.584852"
+                   y="-518.327101"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3118,8 +3259,8 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413311958">
-          <posattr x="864.000000"
-                   y="-152.000000"/>
+          <posattr x="854.000000"
+                   y="-172.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3192,7 +3333,7 @@ Coordinates Left</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1413311964">
-          <posattr x="1116.084852"
+          <posattr x="1204.584852"
                    y="-324.837604"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3351,7 +3492,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(coor,st)</text>
+                version="4.0.1">st</text>
         </annot>
       </arc>
       <arc id="ID1413311993"
@@ -3436,8 +3577,8 @@ Coordinates Left</text>
         <transend idref="ID1413311951"/>
         <placeend idref="ID1413311979"/>
         <annot id="ID1413311998">
-          <posattr x="581.500000"
-                   y="-426.000000"/>
+          <posattr x="523.000000"
+                   y="-417.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3447,7 +3588,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(coor,st)</text>
+                version="4.0.1">st</text>
         </annot>
       </arc>
       <arc id="ID1413311999"
@@ -3564,7 +3705,7 @@ Coordinates Left</text>
         <transend idref="ID1413311957"/>
         <placeend idref="ID1413311988"/>
         <annot id="ID1413312006">
-          <posattr x="1010.500000"
+          <posattr x="1020.000000"
                    y="-192.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3575,7 +3716,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">k</text>
+                version="4.0.1">true</text>
         </annot>
       </arc>
       <arc id="ID1413312007"
@@ -3686,8 +3827,8 @@ Coordinates Left</text>
         <transend idref="ID1413311969"/>
         <placeend idref="ID1413311975"/>
         <annot id="ID1413312014">
-          <posattr x="247.000000"
-                   y="-349.000000"/>
+          <posattr x="234.000000"
+                   y="-351.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3718,7 +3859,7 @@ Coordinates Left</text>
         <transend idref="ID1413311969"/>
         <placeend idref="ID1413311979"/>
         <annot id="ID1413312016">
-          <posattr x="382.500000"
+          <posattr x="362.000000"
                    y="-273.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3729,7 +3870,7 @@ Coordinates Left</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(coor,st)</text>
+                version="4.0.1">st</text>
         </annot>
       </arc>
       <arc id="ID1413312017"
@@ -3860,17 +4001,7 @@ Coordinates Left</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10004.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10001.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -3888,6 +4019,41 @@ Coordinates Left</text>
       <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10004.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.options.disable">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.options.discover">
+        <value>
+          <boolean>false</boolean>
         </value>
       </option>
       <option name="repavg">
@@ -4094,8 +4260,8 @@ Coordinates Left</text>
                  height="852">
         <sheets>
           <cpnsheet id="ID1413289050"
-                    panx="-111.000000"
-                    pany="48.000000"
+                    panx="-116.000000"
+                    pany="44.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -4103,8 +4269,8 @@ Coordinates Left</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1413295964"
-                    panx="0.000000"
-                    pany="-68.000000"
+                    panx="-37.000000"
+                    pany="-74.000000"
                     zoom="1.000000"
                     instance="ID1413295737">
             <zorder>
@@ -4192,6 +4358,15 @@ Coordinates Left</text>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
